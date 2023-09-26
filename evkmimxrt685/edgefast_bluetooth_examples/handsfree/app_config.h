@@ -15,6 +15,7 @@
  * WIFI_88W8987_BOARD_AW_CM358_USD
  * WIFI_IW416_BOARD_MURATA_1XK_USD
  * WIFI_88W8987_BOARD_MURATA_1ZM_USD
+ * WIFI_IW416_BOARD_CMP9010
  *
  * If aw am510 uSD used, define marco WIFI_IW416_BOARD_AW_AM510_USD in following.
  * If aw am457 uSD used, define marco WIFI_IW416_BOARD_AW_AM457_USD in following.
@@ -31,10 +32,11 @@
 /*#define WIFI_IW416_BOARD_AW_AM510_USD*/
 /*#define WIFI_IW416_BOARD_MURATA_1XK_USD*/
 /*#define WIFI_88W8987_BOARD_MURATA_1ZM_USD*/
+/*#define WIFI_IW416_BOARD_CMP9010*/
 
 #if defined(WIFI_IW416_BOARD_AW_AM510_USD) || defined(WIFI_IW416_BOARD_AW_AM457_USD) ||     \
     defined(WIFI_88W8987_BOARD_AW_CM358_USD) || defined(WIFI_IW416_BOARD_MURATA_1XK_USD) || \
-    defined(WIFI_88W8987_BOARD_MURATA_1ZM_USD)
+    defined(WIFI_88W8987_BOARD_MURATA_1ZM_USD) || defined(WIFI_IW416_BOARD_CMP9010)
 #include "bt_module_config.h"
 #include "wifi_config.h"
 #else

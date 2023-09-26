@@ -14,12 +14,14 @@
  *     WIFI_88W8801_BOARD_MURATA_2DS_USD
  *     WIFI_IW416_BOARD_MURATA_1XK_USD
  *     WIFI_88W8987_BOARD_MURATA_1ZM_USD
+ *     WIFI_IW416_BOARD_CMP9010
  */
 /* @TEST_ANCHOR */
 #define WIFI_IW416_BOARD_MURATA_1XK_USD
 /* @END_TEST_ANCHOR */
 
 /* Wi-Fi boards configuration list */
+/*#define WIFI_IW416_BOARD_CMP9010*/
 
 /* AzureWave AW-NM191-uSD */
 #if defined(WIFI_88W8801_BOARD_AW_NM191_USD)
@@ -68,7 +70,7 @@
     }
 
 /* AzureWave AW-AM510-uSD */
-#elif defined(WIFI_IW416_BOARD_AW_AM510_USD)
+#elif (defined(WIFI_IW416_BOARD_AW_AM510_USD) || defined(WIFI_IW416_BOARD_CMP9010))
 #define WIFI_BT_TX_PWR_LIMITS "wlan_txpwrlimit_cfg_WW.h"
 #define SD8978
 #define SDMMCHOST_OPERATION_VOLTAGE_1V8

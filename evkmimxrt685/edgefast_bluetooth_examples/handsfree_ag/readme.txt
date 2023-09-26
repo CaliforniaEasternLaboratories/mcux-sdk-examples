@@ -20,6 +20,7 @@ Hardware requirements
   - AzureWave AW-CM358-uSD
   - Murata uSD-M.2 Adapter (LBEE0ZZ1WE-uSD-M2) and Embedded Artists 1XK M.2 Module (EAR00385)
   - Murata uSD-M.2 Adapter (LBEE0ZZ1WE-uSD-M2) and Embedded Artists 1ZM M.2 Module (EAR00364)
+  - CEL CMP9010
 
 Board settings
 ==============
@@ -29,6 +30,7 @@ If you want use the AzureWave AW-AM457-uSD, please change the macro to WIFI_IW41
 If you want use the AzureWave AW-CM358-uSD, please change the macro to WIFI_88W8987_BOARD_AW_CM358_USD.
 If you want to use Embedded Artists Type 1XK module with uSD-M2 adapter, please change the macro to WIFI_IW416_BOARD_MURATA_1XK_USD .
 If you want to use Embedded Artists Type 1ZM module with uSD-M2 adapter, please change the macro to WIFI_88W8987_BOARD_MURATA_1ZM_USD.
+If you want to use the CEL CMP9010 module, please change the macro to WIFI_IW416_BOARD_CMP9010.
 
 Jumper settings for RT685:
 connect J6 with external power

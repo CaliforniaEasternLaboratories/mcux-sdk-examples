@@ -38,12 +38,14 @@
  * WIFI_88W8987_BOARD_AW_CM358_USD
  * WIFI_IW416_BOARD_MURATA_1XK_USD
  * WIFI_88W8987_BOARD_MURATA_1ZM_USD
+ * WIFI_IW416_BOARD_CMP9010
  *
  * If aw am510 uSD used, define marco WIFI_IW416_BOARD_AW_AM510_USD in following.
  * If aw am457 uSD used, define marco WIFI_IW416_BOARD_AW_AM457_USD in following.
  * If aw cm358 uSD used, define marco WIFI_88W8987_BOARD_AW_CM358_USD in following.
  * If Murata Type 1XK module used, define macro WIFI_IW416_BOARD_MURATA_1XK_USD in following.
  * If Murata Type 1ZM module used, define macro WIFI_88W8987_BOARD_MURATA_1ZM_USD in following.
+ * If using CMP9010 from CEL, define macro WIFI_IW416_BOARD_CMP9010 below
  */
 
 /* @TEST_ANCHOR */
@@ -54,10 +56,11 @@
 /*#define WIFI_88W8987_BOARD_AW_CM358_USD*/
 /*#define WIFI_IW416_BOARD_MURATA_1XK_USD*/
 /*#define WIFI_88W8987_BOARD_MURATA_1ZM_USD*/
+/*#define WIFI_IW416_BOARD_CMP9010*/
 
 #if (defined(WIFI_IW416_BOARD_AW_AM510_USD) || defined(WIFI_IW416_BOARD_AW_AM457_USD) ||     \
      defined(WIFI_88W8987_BOARD_AW_CM358_USD) || defined(WIFI_IW416_BOARD_MURATA_1XK_USD) || \
-     defined(WIFI_88W8987_BOARD_MURATA_1ZM_USD))
+     defined(WIFI_88W8987_BOARD_MURATA_1ZM_USD) || defined(WIFI_IW416_BOARD_CMP9010))
 #include "bt_module_config.h"
 #include "wifi_config.h"
 #else

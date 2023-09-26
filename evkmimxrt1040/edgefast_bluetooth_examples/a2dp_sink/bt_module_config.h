@@ -117,6 +117,18 @@
     {                                                                                  \
         .ed_ctrl_2g = 0x1, .ed_offset_2g = 0x6, .ed_ctrl_5g = 0x1, .ed_offset_5g = 0x6 \
     }
+#elif (defined(WIFI_IW416_BOARD_CMP9010))
+#define SD8978
+#define SDMMCHOST_OPERATION_VOLTAGE_3V3
+/* #define SDMMCHOST_OPERATION_VOLTAGE_1V8 */
+#define SD_CLOCK_MAX                (25000000U)
+#define CONFIG_BR_SCO_PCM_DIRECTION 1
+#define WIFI_BT_TX_PWR_LIMITS       "wlan_txpwrlimit_cfg_WW.h"
+#define WIFI_BT_USE_USD_INTERFACE
+#define WLAN_ED_MAC_CTRL                                                               \
+    {                                                                                  \
+        .ed_ctrl_2g = 0x1, .ed_offset_2g = 0x9, .ed_ctrl_5g = 0x1, .ed_offset_5g = 0xC \
+    }
 #else
 #error "Please define macro related to wifi board"
 #endif

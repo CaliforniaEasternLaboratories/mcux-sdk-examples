@@ -18,6 +18,7 @@
  * WIFI_IW416_BOARD_MURATA_1XK_M2
  * WIFI_88W8987_BOARD_MURATA_1ZM_USD
  * WIFI_88W8987_BOARD_MURATA_1ZM_M2
+ * WIFI_IW416_BOARD_CMP9010
  *
  * If aw am510 ma used, define marco WIFI_IW416_BOARD_AW_AM510MA in following.
  * If aw cm358 ma used, define marco WIFI_88W8987_BOARD_AW_CM358MA in following.
@@ -27,6 +28,7 @@
  * If Embedded Artists Type 1XK(EAR00385 M2 only) used, define macro WIFI_IW416_BOARD_MURATA_1XK_M2 in following.
  * If Embedded Artists Type 1ZM with uSD-M2 adapter used, define macro WIFI_88W8987_BOARD_MURATA_1ZM_USD in following.
  * If Embedded Artists Type 1ZM(EAR00364 M2 only) used , define macro WIFI_88W8987_BOARD_MURATA_1ZM_M2 in following.
+ * If using CMP9010 from CEL, define macro WIFI_IW416_BOARD_CMP9010 below
  */
 
 /* @TEST_ANCHOR */
@@ -39,11 +41,13 @@
 /*#define WIFI_IW416_BOARD_MURATA_1XK_M2*/
 /*#define WIFI_88W8987_BOARD_MURATA_1ZM_USD*/
 /*#define WIFI_88W8987_BOARD_MURATA_1ZM_M2*/
+/*#define WIFI_IW416_BOARD_CMP9010*/
 
 #if defined(WIFI_IW416_BOARD_AW_AM510MA) || defined(WIFI_88W8987_BOARD_AW_CM358MA) ||      \
     defined(WIFI_IW416_BOARD_AW_AM510_USD) || defined(WIFI_88W8987_BOARD_AW_CM358_USD) ||  \
     defined(WIFI_IW416_BOARD_MURATA_1XK_USD) || defined(WIFI_IW416_BOARD_MURATA_1XK_M2) || \
-    defined(WIFI_88W8987_BOARD_MURATA_1ZM_USD) || defined(WIFI_88W8987_BOARD_MURATA_1ZM_M2)
+    defined(WIFI_88W8987_BOARD_MURATA_1ZM_USD) || defined(WIFI_88W8987_BOARD_MURATA_1ZM_M2) || \
+    defined(WIFI_IW416_BOARD_CMP9010)
 #include "bt_module_config.h"
 #include "wifi_config.h"
 #else

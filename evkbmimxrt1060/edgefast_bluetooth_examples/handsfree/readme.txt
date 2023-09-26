@@ -26,6 +26,7 @@ Before building the example application select Wi-Fi module macro in the app_con
 If you want to use Embedded Artists Type 1XK module with uSD-M2 adapter, please change the macro to WIFI_IW416_BOARD_MURATA_1XK_USD.
 If you want use the AzureWave WIFI_IW416_BOARD_AW_AM510_USD, please change the macro to WIFI_IW416_BOARD_AW_AM510_USD.
 If you want use the AzureWave WIFI_88W8987_BOARD_AW_CM358_USD, please change the macro to WIFI_88W8987_BOARD_AW_CM358_USD.
+If you want to use the CEL CMP9010 module, please change the macro to WIFI_IW416_BOARD_CMP9010.
 
 Jumper settings for RT1060-EVKB (enables external 5V supply):
 remove  J40 5-6
