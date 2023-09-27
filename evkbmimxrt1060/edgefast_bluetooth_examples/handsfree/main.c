@@ -473,7 +473,7 @@ int controller_hci_uart_get_configuration(controller_hci_uart_config_t *config)
 #endif
     return 0;
 }
-#elif defined(WIFI_IW416_BOARD_AW_AM510_USD)
+#elif (defined(WIFI_IW416_BOARD_AW_AM510_USD) || defined(WIFI_IW416_BOARD_CMP9010))
 int controller_hci_uart_get_configuration(controller_hci_uart_config_t *config)
 {
     if (NULL == config)
@@ -572,7 +572,7 @@ int main(void)
 
     BOARD_ConfigMPU();
     BOARD_InitBootPins();
-#if defined(WIFI_IW416_BOARD_AW_AM510_USD)
+#if (defined(WIFI_IW416_BOARD_AW_AM510_USD) || defined(WIFI_IW416_BOARD_CMP9010))
     BOARD_DeinitArduinoUARTPins();
 #elif defined(WIFI_88W8987_BOARD_AW_CM358_USD) || defined(WIFI_88W8987_BOARD_MURATA_1ZM_USD) || \
     defined(WIFI_IW416_BOARD_MURATA_1XK_USD)

@@ -28,6 +28,7 @@ If you want use the AzureWave WIFI_IW416_BOARD_AW_AM457_USD, please change the m
 If you want use the AzureWave WIFI_88W8987_BOARD_AW_CM358_USD, please change the macro to WIFI_88W8987_BOARD_AW_CM358_USD.
 If you want use the Embedded Artists Type 1ZM module, please change the macro to WIFI_88W8987_BOARD_MURATA_1ZM_USD.
 If you want use the Embedded Artists Type 1XK module, please change the macro to WIFI_IW416_BOARD_MURATA_1XK_USD.
+If you want to use the CEL CMP9010 module, please change the macro to WIFI_IW416_BOARD_CMP9010.
 
 Jumper settings for RT1060 (enables external 5V supply):
 remove  J1 5-6

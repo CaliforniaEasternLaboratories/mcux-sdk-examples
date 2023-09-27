@@ -17,6 +17,7 @@
  *     WIFI_88W8801_BOARD_UBX_LILY_W1_USD
  *     WIFI_88W8987_BOARD_UBX_JODY_W2_USD
  *     WIFI_IW416_BOARD_UBX_MAYA_W1_USD
+ *     WIFI_IW416_BOARD_CMP9010
  */
 /* @TEST_ANCHOR */
 #define WIFI_IW416_BOARD_MURATA_1XK_USD
@@ -245,6 +246,17 @@
         .ed_ctrl_2g = 0x1, .ed_offset_2g = 0x9, .ed_ctrl_5g = 0x1, .ed_offset_5g = 0xC \
     }
 
+/* CEL CMP9010 */
+#elif defined(WIFI_IW416_BOARD_CMP9010)
+#define WIFI_BT_TX_PWR_LIMITS "wlan_txpwrlimit_cfg_WW.h"
+#define SD8978
+#define SDMMCHOST_OPERATION_VOLTAGE_1V8
+#define WIFI_BT_USE_USD_INTERFACE
+#define WLAN_ED_MAC_CTRL                                                               \
+    {                                                                                  \
+        .ed_ctrl_2g = 0x1, .ed_offset_2g = 0x9, .ed_ctrl_5g = 0x1, .ed_offset_5g = 0xC \
+    }
+    
 #else
 #error "Please define macro related to wifi board"
 #endif

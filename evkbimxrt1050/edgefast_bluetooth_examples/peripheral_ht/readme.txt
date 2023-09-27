@@ -29,6 +29,7 @@ If you want to use the AzureWave AW-AM457-uSD, please change the macro to WIFI_I
 If you want to use the AzureWave AW-CM358-uSD, please change the macro to WIFI_88W8987_BOARD_AW_CM358_USD.
 If you want to use the Murata Type 1ZM module, please change the macro to WIFI_88W8987_BOARD_MURATA_1ZM_USD.
 If you want to use the Murata Type 1XK module, please change the macro to WIFI_IW416_BOARD_MURATA_1XK_USD.
+If you want to use the CEL CMP9010 module, please change the macro to WIFI_IW416_BOARD_CMP9010.
 If you want to use the K32W061, please change the macro to K32W061_TRANSCEIVER.
 
 Jumper settings for Murata uSD-M.2 adapter:

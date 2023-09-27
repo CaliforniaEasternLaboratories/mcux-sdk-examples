@@ -30,7 +30,7 @@
     {                                                                                  \
         .ed_ctrl_2g = 0x1, .ed_offset_2g = 0x9, .ed_ctrl_5g = 0x1, .ed_offset_5g = 0xC \
     }
-#elif (defined(WIFI_IW416_BOARD_AW_AM510_USD))
+#elif (defined(WIFI_IW416_BOARD_AW_AM510_USD) || defined(WIFI_IW416_BOARD_CMP9010))
 #define SD8978
 #define SDMMCHOST_OPERATION_VOLTAGE_3V3
 /* #define SDMMCHOST_OPERATION_VOLTAGE_1V8 */
